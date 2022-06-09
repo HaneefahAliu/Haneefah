@@ -1,0 +1,360 @@
+/* General style */
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    font-family: 'Karla', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem
+}
+
+* {
+    outline: none !important
+}
+
+img {
+    max-width: 100%
+}
+
+a {
+    color: #000;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+section {
+    position: relative;
+    padding: 7.5rem 0;
+}
+
+@media (max-width: 47.99em) {
+    section {
+        padding: 4rem 0
+    }
+}
+
+.container {
+    position: relative;
+    z-index: 1
+}
+
+a:hover, a:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+.btn[class*='btn-']:focus {
+    box-shadow: none
+}
+
+.background-holder {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    overflow: hidden
+}
+
+.background-holder.overlay:before {
+    position: absolute;
+    content: '';
+    background: rgba(0, 0, 0, 0.25);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1
+}
+
+.box {
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-shadow: 0px 4px 13px rgba(129, 129, 129, 0.16);
+    border-radius: 5px;
+    /* margin-right: 5px; */
+}
+
+
+/* Navigation */
+.znav-container:not([class*="sticky-"]) {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+    z-index: 1030
+}
+
+@media (max-width: 61.99em) {
+    .znav-container {
+        max-height: 100vh;
+        overflow-y: auto
+    }
+}
+
+.znav-fixed {
+    position: fixed !important
+}
+
+.znav-container .navbar {
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: 0.01em;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 1.5;
+}
+
+.znav-container .navbar a.navbar-brand {
+    font-size: 15px;
+    text-transform: uppercase;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start
+}
+
+.znav-container .navbar button.navbar-toggler {
+    -webkit-transform: translate3d(25px, -5px, 0);
+    transform: translate3d(25px, -5px, 0);
+    padding: 0
+}
+
+.znav-container ul {
+    list-style-type: none;
+    padding-left: 0
+}
+
+@media (min-width: 62em) {
+    .znav-container ul {
+        margin-left: -1.2rem
+    }
+}
+
+.znav-container ul li {
+    padding: 0;
+    position: relative
+}
+
+.znav-container ul li .active {
+    color: #8B3F00;
+    text-decoration: line-through;
+}
+
+.znav-container ul li a:not(.btn) {
+    border: 1px solid transparent;
+    display: block;
+    padding: .4rem 1.2rem;
+    transition: all 0.2s ease-in-out
+}
+
+.znav-container ul li a:not(.btn):active, 
+.znav-container ul li a:not(.btn):hover, 
+.znav-container ul li a:not(.btn):focus, 
+.znav-container ul li a:not(.btn):active:focus {
+    color: #8B3F00;
+    text-decoration: line-through;
+}
+
+@media (max-width: 61.99em) {
+    .znav-container ul li a:not(.btn) {
+        margin-left: -1.2rem
+    }
+}
+
+.znav-container .dropdown,
+ .znav-container .megamenu {
+    border-radius: 3px
+}
+
+@media (max-width: 61.99em) {
+    .znav-container .dropdown,
+     .znav-container .megamenu {
+        display: none
+    }
+}
+
+@media (min-width: 62em) {
+    .znav-container .dropdown, 
+    .znav-container .megamenu {
+        transition: all 0.2s ease-in-out;
+        pointer-events: none;
+        opacity: 0;
+        display: none
+    }
+}
+
+.znav-container .megamenu ul li a {
+    font-weight: 400;
+    padding: .2rem 1.2rem
+}
+
+@media (max-width: 61.99em) {
+    .znav-container ul.navbar-nav {
+        padding: 1.2rem 0
+    }
+}
+
+@media (max-width: 61.99em) {
+    .znav-container ul.navbar-nav>li .btn {
+        width: 100%;
+        margin: 5px 0
+    }
+}
+
+.znav-container {
+    background-color: #fff
+}
+
+.znav-container button {
+    color: #fafafa
+}
+
+.znav-container .megamenu, 
+.znav-container .dropdown {
+    color: #fff;
+    background-color: #000
+}
+
+@media (min-width: 62em) {
+    .znav-container .megamenu,
+    .znav-container .dropdown {
+        box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4)
+    }
+}
+
+.hamburger {
+    padding: 8px
+}
+
+.hamburger .hamburger-box {
+    height: 0;
+    width: 30px
+}
+
+.hamburger .hamburger-box .hamburger-inner, 
+.hamburger .hamburger-box .hamburger-inner::after, 
+.hamburger .hamburger-box .hamburger-inner::before {
+    width: 100%;
+    height: 1px;
+    border-radius: 3px;
+    background-color: currentColor
+}
+
+.hamburger-inner::before {
+    top: -7px
+}
+
+.hamburger--emphatic .hamburger-inner::after {
+    top: 7px
+}
+
+.overflow-hidden {
+    overflow: hidden
+}
+
+/* buttons */
+.btn {
+    padding: .8rem 2.5rem;
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: 0.01em;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+    line-height: 1.5
+}
+
+.btn:active {
+    box-shadow: none
+}
+
+.btn-outline-dark {
+    color: #000;
+    background-color: transparent;
+    border-color: #000;
+    border-radius: 20px;
+}
+
+.btn-outline-dark:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn.btn-sm {
+    padding: .4rem 1.2rem
+}
+
+
+/* paddings and margins */
+.border-bottom {
+    border-bottom: 1px solid #dadada;
+}
+
+.pt-6 {
+    padding-top: 6rem;
+}
+
+.px-6 {
+    padding-left: 5rem !important;
+    padding-right: 7rem !important;
+}
+
+.py-6 {
+    padding-top: 2rem !important;
+    padding-bottom: 1rem !important
+}
+
+.py-7 {
+    padding-top: 7rem !important;
+    padding-bottom: 7rem !important
+}
+
+/* Text Styles and weight */
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.3rem;
+    line-height: 1.5;
+    letter-spacing: .05rem;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5;
+    letter-spacing: .05rem;
+}
+
+.fs-16 {
+    font-size: 16px !important;
+}
+
+.fs-20 {
+    font-size: 20px !important;
+}
+
+.fs-24 {
+    font-size: 24px !important;
+}
+
+.fw-400 {
+    font-weight: 400 !important
+}
+
+.fw-500 {
+    font-weight: 500 !important
+}
+
+/* color */
+.color-5 {
+    color: #777777 !important
+}
