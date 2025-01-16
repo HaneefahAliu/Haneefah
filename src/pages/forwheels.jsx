@@ -15,9 +15,7 @@ function ForWheels() {
         persona4: '',
         ar: '',
         sketches: '',
-        learn: '',
-        maintenance: '',
-        practice: '',
+        design: '',
         iteration1: '',
         iteration2: '',
     });
@@ -65,9 +63,7 @@ function ForWheels() {
                     ia4: await loadImage('forwheels-ia4.png'),
                     ia5: await loadImage('forwheels-ia5.png'),
                     sketch: await loadImage('forwheels-sketch.png'),
-                    learn: await loadImage('forwheels-learn.png'),
-                    maintenance: await loadImage('forwheels-sketch.png'),
-                    practice: await loadImage('forwheels-sketch.png'),
+                    design: await loadImage('design.png'),
                     iteration1: await loadImage('forwheels-iteration1.png'),
                     iteration2: await loadImage('forwheels-iteration2.png'),
                 };
@@ -279,21 +275,9 @@ function ForWheels() {
                         <p>Over a focused 12-week development period, our team successfully designed and delivered the ForWheels application, carefully crafting every element to enhance the user experience. By adhering to our core principles, we created a solution that transforms the way users interact with our platform. The project's success stems from our unwavering commitment to our strategic vision</p>
                     </div>
                 </div>
+                <img className='pb-3' src={images.design} alt="" />
 
-                <h4>learn mode</h4>
-                <div className='pb-5'>
-                    <img className='pb-5' src={images.learn} alt="" />
-                </div>
-
-                <h4 className='py-5'>maintenance mode</h4>
-                <div className='pb-5'>
-                    <img className='pb-5' src={images.maintenance} alt="" />
-                </div>
-
-                <h4 className='py-5'>practice mode</h4>
-                <div className='pb-5'>
-                    <img className='pb-5' src={images.practice} alt="" />
-                </div>
+                
 
                 <div className="row py-5">
                     <div className="col-md-3">

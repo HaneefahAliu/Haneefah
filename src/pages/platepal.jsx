@@ -15,10 +15,7 @@ function PlatePal() {
         ipad1: '',
         ipad2: '',
         watch: '',
-        design1: '',
-        design2: '',
-        design3: '',
-        design4: '',
+        design: '',
     });
 
     useEffect(() => {
@@ -42,10 +39,7 @@ function PlatePal() {
                     ipad1: await loadImage('ipad1.png'),
                     ipad2: await loadImage('ipad2.png'),
                     watch: await loadImage('watch.png'),
-                    design1: await loadImage('design1.png'),
-                    design2: await loadImage('design2.png'),
-                    design3: await loadImage('design3.png'),
-                    design4: await loadImage('design4.png'),
+                    design: await loadImage('design.png'),
                 };
                 setImages(urls);
             } catch (error) {
@@ -153,10 +147,7 @@ function PlatePal() {
 
                 <img className='pb-3' src={images.element} alt="" />
                 <p>Choosing a colour palette that allows for enough contrast between the the background, typography, and content was vital. (Enhanced contrast in WCAG 1.4.6). To ensure clear visibility, a white background (#FFFFFF) with a minimum contrast ratio of 4.5:1 was combined with a shade of green (#004B23) as the primary colour and the text colour (#0A071A).I decided to use the Urbanist, a modern sans-serif typeface, throughout the entire application's design to improve text readability across platforms because it strikes a good mix between being extremely readable and aesthetically pleasing.</p>
-                <img className='pb-3' src={images.design1} alt="" />
-                <img className='pb-3' src={images.design2} alt="" />
-                <img className='pb-3' src={images.design3} alt="" />
-                <img className='pb-3' src={images.design4} alt="" />
+                <img className='pb-3' src={images.design} alt="" />
                 
                 <div className="row py-5">
                     <div className="col-md-3">
