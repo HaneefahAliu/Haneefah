@@ -1,42 +1,73 @@
 .header {
-    background-color: #131313;
+    background-color: #FFF;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 10;
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #212121;
+    border-bottom: 1px solid #E7E8EE;
     padding: 24px 0;
 }
 
 .header-content {
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-right: 1px solid #212121;
 }
 
 .header img {
     width: 100px;
-    height: 60px;
+    height: 40px;
 }
 
-a.button {
-    border: 1px solid#F5F0E6;
-    color: #F5F0E6;
+.pagesTab {
+    background-color: #F3F4F6;
+    border: 1px solid #E7E8EE;
+    border-radius: 100px;
+    padding: 12px;
+}
+
+.pagesTab a {
     text-decoration: none;
-    padding: 14px 36px;
-    font-size: 18px;
-    cursor: pointer;
 }
 
-a.button:hover {
-    background-color: #F3D8A2;
-    color: #181716;
-    font-weight: bold;
+.tab {
+    color: #ABACB9;
+    font-size: 16px;
+    padding: 8px 14px;
+    cursor: pointer;
+    background-color: #F3F4F6;
+    border-radius: 100px;
+}
+
+.tab:hover, .tab.active {
+    background-color: #FFF;
+}
+
+.tab.active {
+    color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+    border: 1px solid #E7E8EE;
+}
+
+a.downloadButton {
+    padding: 12px 32px;
+    gap: 20px;
+    position: relative;
+    background: linear-gradient(180deg, rgba(199, 255, 179, 0.18) -42.39%, #AFFF92 129.35%);
+    border: 1px solid #60C83A;
+    box-shadow: 0px 17.15px 33.87px -17.15px #64D870, inset 0px 12.86px 4px rgba(255, 255, 255, 0.25), inset 0px -12.86px 4px #A8F68B;
+    border-radius: 32px;
+    font-family: "Urbanist", sans-serif;
+    text-decoration: none;
+    color: #218E2E;
+    font-weight: 600;
+}
+
+a.downloadButton:hover {
+    background-color: #FFF;
 }

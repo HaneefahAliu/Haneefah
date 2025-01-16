@@ -1,0 +1,74 @@
+.footer {
+    width: 70%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.footer hr {
+    color: #ABACB9;
+}
+
+.footerHeading {
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.footerHeading h1 {
+    font-family: "Paytone One", sans-serif;
+    font-size: 80px;
+}
+
+.footerHeading h2 {
+    font-family: "Paytone One", sans-serif;
+    font-size: 48px;
+    padding-bottom: 24px;
+}
+
+.footerHeading img.idea {
+    width: 80px;
+}
+
+.footerHeading p {
+    font-family: "Urbanist", sans-serif;
+    font-size: 20px;
+    padding-bottom: 16px;
+}
+
+.footerHeading a {
+    padding: 16px 32px;
+    gap: 20px;
+    position: relative;
+    background: linear-gradient(180deg, rgba(199, 255, 179, 0.18) -42.39%, #AFFF92 129.35%);
+    border: 1px solid #60C83A;
+    box-shadow: 0px 17.15px 33.87px -17.15px #64D870, inset 0px 12.86px 4px rgba(255, 255, 255, 0.25), inset 0px -12.86px 4px #A8F68B;
+    border-radius: 32px;
+    font-family: "Urbanist", sans-serif;
+    text-decoration: none;
+    color: #218E2E;
+    font-weight: 600;
+}
+
+.footerCard { 
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding-top: 16px;
+}
+
+.socialMediaLink a {
+    padding-right: 24px;
+    text-decoration: none;
+    color: #000;
+}
+
+.socialMediaLink a:hover {
+    text-decoration: underline;
+    color: #218E2E;
+}
+
+a.me {
+    color: #218E2E;
+}

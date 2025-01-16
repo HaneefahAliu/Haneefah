@@ -1,0 +1,57 @@
+.image-scroll-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 24px 0 100px 0;
+}
+
+.image-scroll-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.image-scroll-track:hover {
+    animation-play-state: paused;
+}
+
+.scroll-image {
+    height: 600px;
+    width: auto;
+    object-fit: cover;
+    margin-right: 24px;
+    border-radius: 8px;
+    border: 1px solid #E7E8EE;
+    box-shadow: 0px 4px 10px 5px #EAEEF7;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Fade effect (optional) */
+.image-scroll-container::before,
+.image-scroll-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.image-scroll-container::before {
+    left: 0;
+    background: linear-gradient(to right, white, transparent);
+}
+
+.image-scroll-container::after {
+    right: 0;
+    background: linear-gradient(to left, white, transparent);
+}
