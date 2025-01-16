@@ -31,7 +31,7 @@ const Header = () => {
                     </Link>
                 </div>
 
-                <a className='downloadButton' target="_blank" href='https://drive.google.com/file/d/1QdNU4z8dendH1QuMwf2pSld0_fueWhFf/view?usp=sharing'>
+                <a className='downloadButton' target="_blank" href='https://drive.google.com/file/d/1nO8vlA8PyNYtcycOY0ywnQVvps6E2ddR/view?usp=sharing'>
                 <ArrowDownToLine color='#218E2E' size={24} strokeWidth={1.5} /> Resume  
                 </a>
             </div>
